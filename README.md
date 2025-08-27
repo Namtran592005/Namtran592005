@@ -1,20 +1,22 @@
 # Nam Trần  
 
-Crafting technology with clarity, elegance, and purpose.  
+Exploring technology with clarity, elegance, and purpose.  
 
 ---
 
 ### ✦ About Me
-- Engineer with a devotion to simplicity and precision  
-- Passionate about intelligent systems and thoughtful design  
-- Advocating the harmony of form and function  
+- Student passionate about computer science and intelligent systems  
+- Believer in the elegance of simplicity and thoughtful design  
+- Learning by creating, testing, and refining with intent  
 
 ---
 
-### ✦ Expertise
-- Software Architecture & Scalable Systems  
-- Artificial Intelligence & Machine Learning  
-- Cloud Engineering & Automation  
+### ✦ Collaboration with AI
+All repositories in this profile are the result of a unique partnership:  
+- **My role**: vision, ideas, structure, and testing  
+- **AI’s role**: implementation, coding, and technical execution  
+
+This process allows me to focus on creativity, direction, and evaluation — while AI serves as the craftsman for code.  
 
 ---
 
@@ -33,4 +35,4 @@ Crafting technology with clarity, elegance, and purpose.
 ---
 
 ### ✦ Connect
-- 🌐 [Website](https://tranvohoangnam.id.vn)   
+- 🌐 [Website](https://tranvohoangnam.id.vn)
