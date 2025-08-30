@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =================================================================== -->
+    <!-- ============ SEO & SOCIAL SHARING (TIÊU CHUẨN MỚI NHẤT) ============ -->
+    <!-- =================================================================== -->
+
+    <!-- 1. CƠ BẢN -->
+    <title>Nam Trần (@Namtran5905) | Bio Page</title>
+    <meta
+      name="description"
+      content="Trang bio cá nhân của Nam Trần. Nơi tổng hợp các liên kết đến mạng xã hội, portfolio và các dự án cá nhân. Creative • Designer • Content Creator."
+    />
+
+    <!-- 2. URL CHUẨN & CHỈ DẪN CHO ROBOT -->
+    <link rel="canonical" href="https://tranvohoangnam.id.vn/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- 3. GIAO THỨC OPEN GRAPH (CHO FACEBOOK, ZALO, MESSENGER,...) -->
+    <meta property="og:title" content="Nam Trần (@Namtran5905) | Bio Page" />
+    <meta
+      property="og:description"
+      content="Creative • Designer • Content Creator. Khám phá các liên kết và dự án của Nam Trần tại đây."
+    />
+    <meta property="og:url" content="https://tranvohoangnam.id.vn/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nam Trần" />
+    <!-- QUAN TRỌNG: Thay thế bằng ĐƯỜNG DẪN TUYỆT ĐỐI tới ảnh preview của bạn (kích thước 1200x630px) -->
+    <meta
+      property="og:image"
+      content="./image/social-preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- 4. GIAO DIỆN & TIỆN ÍCH -->
+    <!-- Thay 'favicon.ico' bằng đường dẫn tới icon của bạn -->
+    <link rel="icon" href="./image/favicon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- 5. DỮ LIỆU CÓ CẤU TRÚC (JSON-LD) CHO GOOGLE -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Nam Trần",
+          "alternateName": "@Namtran5905",
+          "url": "https://tranvohoangnam.id.vn/",
+          "image": "./image/Avatar.webp",
+          "jobTitle": "Creative • Designer • Content Creator",
+          "description": "Trang bio cá nhân của Nam Trần. Nơi tổng hợp các liên kết đến mạng xã hội, portfolio và các dự án cá nhân.",
+          "sameAs": [
+            "https://www.instagram.com/namtran5905",
+            "https://www.threads.net/namtran5905",
+            "https://fb.com/namtran5905",
+            "https://www.tiktok.com/@namtran5905"
+          ]
+        }
+      }
+    </script>
+
+    <!-- =================================================================== -->
+    <!-- ======================== KẾT THÚC PHẦN SEO ======================== -->
+    <!-- =================================================================== -->
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';"
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="preconnect" href="https://www.instagram.com" />
+    <link rel="preconnect" href="https://www.threads.net" />
+    <link rel="preconnect" href="https://fb.com" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+        --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+          "Helvetica Neue", Arial, sans-serif;
+        background: #000000;
+        color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        overflow-x: hidden;
+        position: relative;
+        padding: 40px 20px;
+      }
+      #starfield-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+      .container {
+        max-width: 400px;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .profile-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 0 auto 24px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s var(--ease-out-quart);
+        animation: fadeInUp 0.8s var(--ease-out-quart) 0.1s both;
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .avatar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 100%
+        );
+        border-radius: 50%;
+      }
+      .avatar:hover {
+        transform: translateY(-4px) scale(1.05);
+        background: rgba(255, 255, 255, 0.12);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2),
+          0 0 20px rgba(0, 113, 227, 0.3);
+      }
+      .name {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        letter-spacing: -0.003em;
+        animation: fadeInUp 0.8s var(--ease-out-quart) 0.2s both;
+      }
+      .username {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 16px;
+        animation: fadeInUp 0.8s var(--ease-out-quart) 0.3s both;
+      }
+      .bio-text {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.47059;
+        max-width: 320px;
+        margin: 0 auto;
+        animation: fadeInUp 0.8s var(--ease-out-quart) 0.4s both;
+      }
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+      .link-item {
+        background: rgba(38, 38, 38, 0.5);
+        backdrop-filter: blur(20px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 16px 20px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.3s var(--ease-out-cubic);
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        position: relative;
+        overflow: hidden;
+        will-change: transform, background, border-color;
+      }
+      .link-item::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        background-image: radial-gradient(
+          circle at var(--x) var(--y),
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0) 40%
+        );
+        opacity: 0;
+        transition: opacity 0.5s;
+        will-change: opacity;
+      }
+      .link-item:hover::after {
+        opacity: 1;
+      }
+      .link-item:hover {
+        background: rgba(50, 50, 50, 0.7);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+      .link-item:active {
+        transform: translateY(0) scale(1);
+        background: rgba(45, 45, 45, 0.6);
+      }
+      .link-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        transition: transform 0.4s var(--ease-out-quart);
+        will-change: transform;
+      }
+      .link-icon img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+      }
+      .link-item:hover .link-icon {
+        transform: scale(1.1) rotate(-5deg);
+      }
+      .link-content {
+        flex: 1;
+      }
+      .link-title {
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+      .link-subtitle {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .link-arrow {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.4);
+        transition: all 0.3s var(--ease-out-cubic);
+      }
+      .link-item:hover .link-arrow {
+        color: rgba(255, 255, 255, 0.9);
+        transform: translateX(4px);
+      }
+      .instagram .link-icon {
+        background: rgba(228, 64, 95, 0.15);
+        border: 1px solid rgba(228, 64, 95, 0.2);
+      }
+      .threads .link-icon {
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .facebook .link-icon {
+        background: rgba(24, 119, 242, 0.15);
+        border: 1px solid rgba(24, 119, 242, 0.2);
+      }
+      .zalo .link-icon {
+        background: rgba(0, 104, 255, 0.15);
+        border: 1px solid rgba(0, 104, 255, 0.2);
+      }
+      .tiktok .link-icon {
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .website .link-icon {
+        background: rgba(0, 113, 227, 0.15);
+        border: 1px solid rgba(0, 113, 227, 0.2);
+      }
+      .footer {
+        text-align: center;
+        animation: fadeInUp 1s var(--ease-out-quart) 1.2s both;
+      }
+      .link-item {
+        animation: fadeInUp 0.8s var(--ease-out-quart) both;
+      }
+      .link-item:nth-child(1) {
+        animation-delay: 0.5s;
+      }
+      .link-item:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+      .link-item:nth-child(3) {
+        animation-delay: 0.7s;
+      }
+      .link-item:nth-child(4) {
+        animation-delay: 0.8s;
+      }
+      .link-item:nth-child(5) {
+        animation-delay: 0.9s;
+      }
+      .link-item:nth-child(6) {
+        animation-delay: 1s;
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 800px;
+        }
+        .links-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+        .link-item:nth-child(odd) {
+          animation-delay: 0.5s;
+        }
+        .link-item:nth-child(even) {
+          animation-delay: 0.6s;
+        }
+      }
+      @media (max-width: 430px) {
+        .avatar {
+          width: 80px;
+          height: 80px;
+        }
+        .name {
+          font-size: 23px;
+        }
+        .bio-text {
+          font-size: 16px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #starfield-canvas {
+          display: none;
+        }
+        .container,
+        .link-item,
+        .avatar,
+        .name,
+        .username,
+        .bio-text,
+        .footer {
+          animation: none;
+        }
+        .link-item,
+        .avatar,
+        .link-icon,
+        .link-arrow {
+          transition: none;
+        }
+        .link-item:hover,
+        .container {
+          transform: none;
+        }
+        .link-item:hover .link-icon {
+          transform: none;
+        }
+        .link-item:hover .link-arrow {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="starfield-canvas"></canvas>
+    <div class="container">
+      <div class="profile-header">
+        <div class="avatar">
+          <img
+            src="./image/Avatar.webp"
+            alt="Nam Trần Avatar"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <h1 class="name">Nam Trần</h1>
+        <p class="username">@Namtran5905</p>
+        <p class="bio-text">Creative • Designer • Content Creator</p>
+      </div>
+
+      <div class="links-container">
+        <a
+          href="https://www.instagram.com/namtran5905"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-item instagram"
+        >
+          <div class="link-icon">
+            <img
+              src="image/instagram.png"
+              alt="Instagram Icon"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="link-content">
+            <div class="link-title">Instagram</div>
+            <div class="link-subtitle">Daily updates</div>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+        <a
+          href="https://www.threads.net/namtran5905"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-item threads"
+        >
+          <div class="link-icon">
+            <img
+              src="image/threads.png"
+              alt="Threads Icon"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="link-content">
+            <div class="link-title">Threads</div>
+            <div class="link-subtitle">Follow me</div>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+        <a
+          href="https://fb.com/namtran5905"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-item facebook"
+        >
+          <div class="link-icon">
+            <img
+              src="image/facebook.png"
+              alt="Facebook Icon"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="link-content">
+            <div class="link-title">Facebook</div>
+            <div class="link-subtitle">Add me</div>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+        <a
+          href="https://zalo.me/0965530439"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-item zalo"
+        >
+          <div class="link-icon">
+            <img
+              src="image/zalo.png"
+              alt="Zalo Icon"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="link-content">
+            <div class="link-title">Zalo</div>
+            <div class="link-subtitle">Kết nối qua Zalo</div>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+        <a
+          href="https://www.tiktok.com/@namtran5905"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-item tiktok"
+        >
+          <div class="link-icon">
+            <img
+              src="image/tiktok.png"
+              alt="TikTok Icon"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="link-content">
+            <div class="link-title">TikTok</div>
+            <div class="link-subtitle">Short videos</div>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+        <a
+          href="https://tranvohoangnam.id.vn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-item website"
+        >
+          <div class="link-icon">
+            <img
+              src="image/website.png"
+              alt="Website Icon"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="link-content">
+            <div class="link-title">Website</div>
+            <div class="link-subtitle">Portfolio & blog</div>
+          </div>
+          <div class="link-arrow">→</div>
+        </a>
+      </div>
+
+      <div class="footer">
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+            font-weight: 400;
+          "
+        >
+          Made with ❤️
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+        if (!prefersReducedMotion) {
+          const canvas = document.getElementById("starfield-canvas");
+          const ctx = canvas.getContext("2d");
+          function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          }
+          window.addEventListener("resize", resizeCanvas);
+          resizeCanvas();
+          const stars = [];
+          const numStars = 200;
+          for (let i = 0; i < numStars; i++) {
+            stars.push({
+              x: Math.random() * canvas.width,
+              y: Math.random() * canvas.height,
+              radius: Math.random() * 1.2 + 0.5,
+              alpha: Math.random(),
+              speed: Math.random() * 0.2 + 0.1,
+              direction: Math.random() > 0.5 ? 1 : -1,
+            });
+          }
+          function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            stars.forEach((star) => {
+              ctx.beginPath();
+              ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+              ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
+              ctx.fill();
+              star.x += star.speed * star.direction;
+              if (star.x > canvas.width + star.radius) {
+                star.x = -star.radius;
+              } else if (star.x < -star.radius) {
+                star.x = canvas.width + star.radius;
+              }
+            });
+            requestAnimationFrame(draw);
+          }
+          draw();
+        }
+        const linkItems = document.querySelectorAll(".link-item");
+        linkItems.forEach((item) => {
+          item.addEventListener("mousemove", (e) => {
+            const rect = item.getBoundingClientRect();
+            item.style.setProperty("--x", e.clientX - rect.left + "px");
+            item.style.setProperty("--y", e.clientY - rect.top + "px");
+          });
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            const focused = document.activeElement;
+            if (focused && focused.classList.contains("link-item")) {
+              focused.click();
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
