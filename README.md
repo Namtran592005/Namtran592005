@@ -54,6 +54,7 @@ while AI becomes the **artisan of execution**.
   <source srcset="https://raw.githubusercontent.com/Namtran592005/Namtran592005/main/output/stats_visitors.svg#gh-dark-mode-only"  media="(prefers-color-scheme: dark)">
   <img src="https://raw.githubusercontent.com/Namtran592005/Namtran592005/main/output/stats_visitors.svg">
 </picture>
+
 ---
 
 ## ✦ Connect with Me
