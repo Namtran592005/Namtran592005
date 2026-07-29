@@ -1,16 +1,15 @@
-## Hi there 👋
+# Nam Trần
 
-<!--
-**Namtran592005/Namtran592005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> *Ideas deserve craftsmanship.*
 
-Here are some ideas to get you started:
+I explore technology through clarity, curiosity, and purpose.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Every project begins with a vision.  
+AI extends my ability to build, iterate, and refine ideas.
+
+I believe that great software is not measured by complexity, but by the simplicity it leaves behind.
+
+---
+
+Website  
+https://tranvohoangnam.id.vn
