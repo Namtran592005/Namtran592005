@@ -20,13 +20,13 @@ Giấy phép · [MIT](LICENSE)
 
 ---
 
-## Quy trình
+## Cách tiếp cận
 
 ```mermaid
 flowchart LR
-  Vision --> Build --> Iterate --> Refine
-  classDef soft fill:#f5f5f7,stroke:#d2d2d7,color:#111111,stroke-width:1px;
-  class Vision,Build,Iterate,Refine soft;
+  A["01 · Vision"] --> B["02 · Build"] --> C["03 · Iterate"] --> D["04 · Refine"]
+  classDef step fill:#f5f5f7,stroke:#d2d2d7,color:#111111,stroke-width:1px;
+  class A,B,C,D step;
 ```
 
 ## Công cụ
