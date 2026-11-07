@@ -20,15 +20,6 @@ License · [MIT](LICENSE)
 
 ---
 
-## Approach
-
-```mermaid
-flowchart LR
-  A["01 · Vision"] --> B["02 · Build"] --> C["03 · Iterate"] --> D["04 · Refine"]
-  classDef step fill:#f5f5f7,stroke:#d2d2d7,color:#111111,stroke-width:1px;
-  class A,B,C,D step;
-```
-
 ## Toolbox
 
 <p align="center">
