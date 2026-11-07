@@ -1,3 +1,5 @@
+<div align="center">
+
 # Nam Trần
 
 > *Ideas deserve craftsmanship.*
@@ -11,5 +13,9 @@ I believe that great software is not measured by complexity, but by the simplici
 
 ---
 
-Website  
+**Website**  
 https://tranvohoangnam.id.vn
+
+**English** · [Tiếng Việt](README.vi.md)
+
+</div>
