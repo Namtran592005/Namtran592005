@@ -14,7 +14,7 @@ I believe that great software is not measured by complexity, but by the simplici
 ---
 
 **Website**  
-https://tranvohoangnam.id.vn
+[tranvohoangnam.id.vn](https://tranvohoangnam.id.vn) · [namtran.ddns.net](https://namtran.ddns.net)
 
 **English** · [Tiếng Việt](README.vi.md)
 
