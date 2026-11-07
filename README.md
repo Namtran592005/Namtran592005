@@ -16,6 +16,8 @@ I believe that great software is not measured by complexity, but by the simplici
 **Website**  
 [tranvohoangnam.id.vn](https://tranvohoangnam.id.vn) · [namtran.ddns.net](https://namtran.ddns.net)
 
+License · [MIT](LICENSE)
+
 ---
 
 ## Process

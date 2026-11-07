@@ -16,6 +16,8 @@ Tôi tin rằng phần mềm vĩ đại không được đo bằng độ phức 
 **Website**  
 [tranvohoangnam.id.vn](https://tranvohoangnam.id.vn) · [namtran.ddns.net](https://namtran.ddns.net)
 
+Giấy phép · [MIT](LICENSE)
+
 ---
 
 ## Quy trình
