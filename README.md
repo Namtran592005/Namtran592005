@@ -39,6 +39,8 @@ flowchart LR
   <img src="https://img.shields.io/badge/Docker-111111?logo=docker&logoColor=white&style=flat-square" alt="Docker">
   <img src="https://img.shields.io/badge/WordPress-111111?logo=wordpress&logoColor=white&style=flat-square" alt="WordPress">
   <img src="https://img.shields.io/badge/SQL%20Server-111111?logo=microsoftsqlserver&logoColor=white&style=flat-square" alt="SQL Server">
+  <img src="https://img.shields.io/badge/MySQL-111111?logo=mysql&logoColor=white&style=flat-square" alt="MySQL">
+  <img src="https://img.shields.io/badge/Linux-111111?logo=linux&logoColor=white&style=flat-square" alt="Linux">
   <img src="https://img.shields.io/badge/Electron-111111?logo=electron&logoColor=white&style=flat-square" alt="Electron">
 </p>
 
